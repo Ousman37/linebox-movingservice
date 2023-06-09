@@ -1,7 +1,3 @@
-.test {
-  display: none;
-}
+@import 'variables';
 
-.test-nest {
-  display: block;
-}
+@import '../../node_modules/bootstrap/scss/bootstrap.scss';
