@@ -4,7 +4,7 @@
   "description": "Hassle-free moving service to make your relocation process smooth and efficient.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "sass src/scss:dist/css"
   },
   "repository": {
     "type": "git",
