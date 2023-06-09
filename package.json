@@ -1,0 +1,25 @@
+{
+  "name": "linebox-movingservice",
+  "version": "0.0.1",
+  "description": "Hassle-free moving service to make your relocation process smooth and efficient.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ousman37/linebox-movingservice.git"
+  },
+  "keywords": [
+    "moving",
+    "relocation",
+    "service",
+    "LINEBOX"
+  ],
+  "author": "Ethmane Didi <ousman.didibela@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ousman37/linebox-movingservice/issues"
+  },
+  "homepage": "https://github.com/Ousman37/linebox-movingservice#readme"
+}
