@@ -48,15 +48,19 @@
               <h1 class="custom-heading-title custom-size-default">Kontaktskjema</h1>
               <p class="custom-heading-title">Vennligst fyll ut skjemaet nedenfor dersom du ønsker å benytte deg av våre
                 tjenester eller har noen spørsmål. Vi vil gjøre vårt beste for å svare deg så raskt som mulig.</p>
-              <form>
+
+              <form onsubmit="return validateForm()">
                 <div class="form-group">
-                  <input type="text" class="form-control" placeholder="Navn" required>
+                  <input type="text" id="name" class="form-control" placeholder="Navn" required>
+                  <span id="nameError" class="error"></span>
                 </div>
                 <div class="form-group">
-                  <input type="email" class="form-control" placeholder="E-post" required>
+                  <input type="email" id="email" class="form-control" placeholder="E-post" required>
+                  <span id="emailError" class="error"></span>
                 </div>
                 <div class="form-group">
-                  <input type="tel" class="form-control" placeholder="Telefon" required>
+                  <input type="tel" id="phone" class="form-control" placeholder="Telefon" required>
+                  <span id="phoneError" class="error"></span>
                 </div>
                 <div class="contact-services">
                   <p>Tjeneste:</p>
@@ -72,12 +76,15 @@
                     <input type="checkbox" id="minilager-oslo" name="service" value="minilager-oslo">
                     <label for="minilager-oslo">Minilager Oslo</label>
                   </div>
+                  <span id="serviceError" class="error"></span>
                 </div>
                 <div class="form-group">
-                  <textarea class="form-control" rows="5" placeholder="Melding" required></textarea>
+                  <textarea id="message" class="form-control" rows="5" placeholder="Melding" required></textarea>
+                  <span id="messageError" class="error"></span>
                 </div>
                 <button type="submit" class="btn btn-primary">Send</button>
               </form>
+
             </div>
 
             <div class="map-section">
@@ -147,7 +154,7 @@
 
 
   <script src="./src/js/Navbar.js"></script>
-
+  <script src="./src/js/contact.js"></script>
 
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
     integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
