@@ -1,0 +1,33 @@
+@import 'Navbar.scss';
+
+@import 'base.scss';
+
+@import 'footer.scss';
+
+.faq-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Adjust the height as needed */
+}
+
+.faq-item {
+  max-width: 600px; /* Adjust the max-width as needed */
+  text-align: center;
+}
+
+.answer {
+  display: none;
+  margin-top: 10px;
+  padding: 10px;
+  background-color: #f2f2f2;
+}
+
+.answer p,
+.answer ul {
+  margin-bottom: 10px;
+}
+
+.faq-item:hover .answer {
+  display: block;
+}

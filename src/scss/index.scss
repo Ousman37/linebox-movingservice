@@ -7,7 +7,7 @@
 @import 'footer.scss';
 
 :root {
-  --navbar-bg-color: #1d70bc;
+  --navbar-bg-color: #ffffff;
   --navbar-text-color: hsl(0, 0%, 85%);
   --navbar-text-color-focus: white;
   --navbar-bg-contrast: hsl(0, 0%, 25%);
@@ -543,16 +543,15 @@
   padding: 4rem;
   margin-bottom: 5rem;
   display: flex;
-  flex-direction: row;
   align-items: center;
   justify-content: space-between;
 }
 
 .img-fluid {
-  width: 100%;
-  max-width: 100%;
+  width: 658px;
+  max-width: 100%; /* Adjust the value as needed */
   height: auto;
-  max-height: 300px; /* Adjust the max-height as needed for larger screens */
+  max-height: 300px; /* Adjust the value as needed */
   margin-right: 1rem;
 }
 
